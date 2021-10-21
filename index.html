@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro</title>
+
+        <!-- GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,400;0,900;1,200;1,400;1,900&display=swap" rel="stylesheet">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/globals.css">
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="container header-container flex">
+
+                <ul class="nav-bar flex">
+                    <li class="nav-item"><a href="#" class="nav-link">Cadastrar</a></li>
+                    <li class="nav-item"><a href="./contacts.html" class="nav-link">Consultar</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <div class="container main-container">
+                <h1>Cadastrar contato</h1>
+
+                <form action="" class="form-container w-100 mt-20">
+                    <div class="form-group cpf">
+                        <label for="cpf">Informe o CPF</label>
+                        <input type="text" id="cpf" name="cpf" placeholder="Apenas números" maxlength="14">
+                    </div>
+
+                    <div class="form-group name w-100">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" disabled>
+                    </div>
+
+                    <div class="form-group tel">
+                        <label for="tel">Telefone</label>
+                        <input type="text" id="tel" name="tel" disabled>
+                    </div>
+
+                    <div class="form-group street w-100">
+                        <label for="street">Rua</label>
+                        <input type="text" id="street" name="street" disabled>
+                    </div>
+
+                    <div class="form-group number w-100">
+                        <label for="number">Número</label>
+                        <input type="text" id="number" name="number" disabled>
+                    </div>
+
+                    <div class="form-group district w-100">
+                        <label for="district">Bairro</label>
+                        <input type="text" id="district" name="district" disabled>
+                    </div>
+
+                    <div class="form-group city w-100">
+                        <label for="city">Cidade</label>
+                        <input type="text" id="city" name="city" disabled>
+                    </div>
+
+                    <div class="form-group buttons">
+                        <button type="submit" id="create">Salvar</button>
+                        <button type="submit" id="remove">Remover</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <!-- SCRIPTS -->
+        <script src="./scripts/form.js"></script>
+        <script src="./scripts/app.js"></script>
+    </body>
+</html>

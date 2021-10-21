@@ -1,0 +1,150 @@
+/* form */
+.form-container {
+    padding: 20px;
+    max-width: 850px;
+    background-color: var(--bg-secondary-color);
+}
+
+.form-group {
+    width: 100%;
+    font-size: 18px;
+    display: inline-block;
+    padding-right: 20px;
+    color: var(--text-secondary-color);
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 6px 0;
+    font-size: 16px;
+    padding-left: 8px;
+    outline: none;
+    border-radius: 4px;
+    border: none;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    color: var(--text-secondary-color);
+    background-color: var(--bg-primary-color);
+}
+
+.form-group.cpf,
+.form-group.tel {
+    max-width: 190px;
+}
+
+.form-group.name {
+    max-width: 400px;
+}
+
+.form-group.street,
+.form-group.district {
+    max-width: 300px;
+}
+
+.form-group.number {
+    max-width: 100px;
+}
+
+.form-group.city {
+    max-width: 380px;
+}
+
+.form-group.buttons {
+    margin-top: 20px;
+}
+
+.form-group.buttons button {
+    width: 100px;
+    font-size: 18px;
+    padding: 7px 0;
+    border-radius: 3px;
+    border: none;
+    margin-right: 10px;
+    cursor: not-allowed;
+    transition: .4s all ease-in-out;
+}
+
+.form-group.buttons button#create.allowed {
+    color: #fff;
+    cursor: pointer;
+    background-color: var(--btn-primary-bg-color);
+}
+
+.form-group.buttons button#remove.allowed {
+    color: #fff;
+    cursor: pointer;
+    background-color: var(--btn-danger-bg-color);
+}
+
+@media (max-width: 359px) {
+
+    .form-group {
+        padding-right: 0;
+    }
+
+    .form-group.cpf,
+    .form-group.tel,
+    .form-group.name,
+    .form-group.street,
+    .form-group.district,
+    .form-group.number,
+    .form-group.city {
+        max-width: 100%;
+    }
+}
+
+/* ---- CONTACTS LIST ---- */
+.table-container {
+    padding: 20px;
+    background-color: var(--bg-secondary-color);
+}
+
+table {
+    width: 100%;
+    min-width: 900px;
+    border-collapse: collapse;
+    color: var(--text-secondary-color);
+}
+
+table thead th {
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 5px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid var(--text-secondary-color);
+}
+
+table tbody td {
+    text-align: center;
+    padding: 8px 5px;
+}
+
+.alert-message {
+    color: var(--text-secondary-color);
+    font-style: italic;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-size: 18px;
+}
+
+.alert-message a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .table-container {
+        overflow-x: scroll;
+    }
+
+    table thead th {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
